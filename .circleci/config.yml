@@ -25,11 +25,6 @@ jobs:
   deploy_to_staging:
     docker:
       - image: google/cloud-sdk
-    environment:
-      - PROJECT_NAME: "my-app"
-      - GOOGLE_PROJECT_ID: "xxxx"
-      - GOOGLE_COMPUTE_ZONE: "europe-west3-a"
-      - GOOGLE_CLUSTER_NAME: "cluster-1"
     steps:
       - checkout
       - run: 
